@@ -1,5 +1,7 @@
 import Header from './Header/Header.jsx'
 import Footer from './Footer/Footer.jsx'
+import Body from './Body/Body.jsx'
+
 
 function App() {
 
@@ -7,6 +9,7 @@ function App() {
 
         <>
             <Header/>
+            <Body />
             <Footer/>
         </>
 
