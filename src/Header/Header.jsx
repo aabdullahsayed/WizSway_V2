@@ -1,13 +1,15 @@
 
 function Header(){
-
     return(
         <header>
-            <h1>WizSway- A Fashion Brand</h1>
-            <p>we started building site</p>
+            <nav style={{justifyContent:"center", display:"flex",textAlign:"center", gap: "30px"}}>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+
         </header>
     );
-
 }
 
 export default Header;
