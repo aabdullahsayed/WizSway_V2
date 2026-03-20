@@ -1,6 +1,7 @@
-import Header from './Header/Header.jsx'
-import Footer from './Footer/Footer.jsx'
-import Body from './Body/Body.jsx'
+import Header from './Components/Header/Header.jsx'
+import Footer from './Components/Footer/Footer.jsx'
+import Body from './Components/Body/Body.jsx'
+import Hero from "./Components/Hero/Hero.jsx";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 
         <>
             <Header/>
+            <Hero/>
             <Body />
             <Footer/>
         </>

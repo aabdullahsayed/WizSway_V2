@@ -1,7 +1,11 @@
+import './Body.css'
 function Footer(){
     return(
       <>
-          <h1>This is the body</h1>
+          <div id="body">
+              <h1>This is the body</h1>
+          </div>
+
       </>
     );
 }
