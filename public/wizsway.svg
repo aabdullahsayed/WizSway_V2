@@ -1,0 +1,30 @@
+<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FAFAF8"/>
+    <stop offset="40%" stop-color="#C9C7C3"/>
+    <stop offset="100%" stop-color="#E8E6E2"/>
+  </linearGradient>
+  <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#E0DEDB"/>
+    <stop offset="100%" stop-color="#7A7875"/>
+  </linearGradient>
+</defs>
+
+<!-- Black field -->
+<rect x="90" y="20" width="500" height="340" fill="#080808" style="fill:rgb(8, 8, 8);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- Mark: single clean W — three vertical strokes connected by two V-dips -->
+<!-- Built from a single filled path for crispness -->
+<path d="&#10;  M255,108&#10;  L264,108&#10;  L290,172&#10;  L316,122&#10;  L322,122&#10;  L348,172&#10;  L374,108&#10;  L383,108&#10;  L354,182&#10;  L346,182&#10;  L319,130&#10;  L292,182&#10;  L284,182&#10;  Z&#10;" fill="url(#sg)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- single hairline under mark -->
+<line x1="255" y1="200" x2="425" y2="200" stroke="#3A3A38" stroke-width="0.6" style="fill:rgb(0, 0, 0);stroke:rgb(58, 58, 56);color:rgb(255, 255, 255);stroke-width:0.6px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+<!-- WIZSWAY wordmark — one unified word, ultra-spaced capitals -->
+<text x="340" y="258" text-anchor="middle" font-family="'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif" font-size="32" font-weight="400" letter-spacing="20" fill="url(#sg)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Didot, &quot;Bodoni MT&quot;, &quot;Playfair Display&quot;, Georgia, serif;font-size:32px;font-weight:400;text-anchor:middle;dominant-baseline:auto">WIZSWAY</text>
+
+<!-- sub-caption -->
+<text x="340" y="306" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" letter-spacing="6" font-weight="300" fill="#5A5856" style="fill:rgb(90, 88, 86);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:8px;font-weight:300;text-anchor:middle;dominant-baseline:auto">PARIS · NEW YORK</text>
+
+</svg>
