@@ -1,30 +1,55 @@
-<svg width="100%" viewBox="0 0 680 380" xmlns="http://www.w3.org/2000/svg">
-<defs>
-  <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#FAFAF8"/>
-    <stop offset="40%" stop-color="#C9C7C3"/>
-    <stop offset="100%" stop-color="#E8E6E2"/>
-  </linearGradient>
-  <linearGradient id="sg2" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#E0DEDB"/>
-    <stop offset="100%" stop-color="#7A7875"/>
-  </linearGradient>
-</defs>
+<svg width="1440" height="800" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="bgTexture">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" stitchTiles="stitch" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0" />
+    </filter>
 
-<!-- Black field -->
-<rect x="90" y="20" width="500" height="340" fill="#080808" style="fill:rgb(8, 8, 8);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <linearGradient id="silverBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#E0E0E0" />
+      <stop offset="50%" stop-color="#F5F5F5" />
+      <stop offset="70%" stop-color="#A0A0A0" />
+      <stop offset="100%" stop-color="#E8E8E8" />
+    </linearGradient>
 
-<!-- Mark: single clean W — three vertical strokes connected by two V-dips -->
-<!-- Built from a single filled path for crispness -->
-<path d="&#10;  M255,108&#10;  L264,108&#10;  L290,172&#10;  L316,122&#10;  L322,122&#10;  L348,172&#10;  L374,108&#10;  L383,108&#10;  L354,182&#10;  L346,182&#10;  L319,130&#10;  L292,182&#10;  L284,182&#10;  Z&#10;" fill="url(#sg)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <filter id="richFoil" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.01 0.5" numOctaves="3" result="noise" seed="99"/>
+      
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 1 
+                                                     0 0 0 0 1 
+                                                     0 0 0 0 1 
+                                                     0 0 0 -0.6 0.8" result="lightSpecs"/>
+      
+      <feDiffuseLighting in="noise" surfaceScale="2" lighting-color="#ffffff" diffuseConstant="1" result="diffuse">
+        <feDistantLight azimuth="45" elevation="60" />
+      </feDiffuseLighting>
+      
+      <feComposite in="diffuse" in2="SourceGraphic" operator="in" result="litText"/>
+      
+      <feBlend in="litText" in2="lightSpecs" mode="screen" result="blendedFoil"/>
+      
+      <feComposite in="SourceGraphic" in2="blendedFoil" operator="arithmetic" k1="0.8" k2="0.3" k3="0.5" k4="0" result="finalFoil"/>
 
-<!-- single hairline under mark -->
-<line x1="255" y1="200" x2="425" y2="200" stroke="#3A3A38" stroke-width="0.6" style="fill:rgb(0, 0, 0);stroke:rgb(58, 58, 56);color:rgb(255, 255, 255);stroke-width:0.6px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+      <feDropShadow in="SourceAlpha" dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.8"/>
+      
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="finalFoil"/>
+      </feMerge>
+    </filter>
+  </defs>
 
-<!-- WIZSWAY wordmark — one unified word, ultra-spaced capitals -->
-<text x="340" y="258" text-anchor="middle" font-family="'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif" font-size="32" font-weight="400" letter-spacing="20" fill="url(#sg)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Didot, &quot;Bodoni MT&quot;, &quot;Playfair Display&quot;, Georgia, serif;font-size:32px;font-weight:400;text-anchor:middle;dominant-baseline:auto">WIZSWAY</text>
+  <rect width="1440" height="800" fill="#030303"/>
+  
+  <rect width="1440" height="800" filter="url(#bgTexture)" opacity="0.5"/>
 
-<!-- sub-caption -->
-<text x="340" y="306" text-anchor="middle" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="8" letter-spacing="6" font-weight="300" fill="#5A5856" style="fill:rgb(90, 88, 86);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;font-size:8px;font-weight:300;text-anchor:middle;dominant-baseline:auto">PARIS · NEW YORK</text>
-
+  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central" 
+        font-family="'Didot', 'Playfair Display', 'Bodoni MT', 'serif'" 
+        font-weight="400" font-size="160" 
+        letter-spacing="0.02em" 
+        fill="url(#silverBase)" 
+        filter="url(#richFoil)">
+    WizSway
+  </text>
 </svg>
