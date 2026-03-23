@@ -1,9 +1,10 @@
+import './Hero.css'
 function Hero() {
 
     return (
 
         <>
-        <img src="../../../public/wizsway.svg" height="1200px" width="800px" />
+            <h1 className="brand-name">WizSway</h1>
         </>
     );
 
