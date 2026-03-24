@@ -1,9 +1,10 @@
+import './Footer.css'
 function footer(){
     return(
 
-        <>
-            <h2>This is the footer - Copyright(WizSway)</h2>
-        </>
+        <div className="footer-container">
+            <h2>&copy; 2026 WizSway</h2>
+        </div>
     );
 }
 
