@@ -3,7 +3,7 @@ function Body(){
     return(
       <>
           <div id="body">
-              <h1>This is the body</h1>
+              <h1>Crafting Wizardry in Fashion, Inspiring Every Sway.</h1>
           </div>
 
       </>
